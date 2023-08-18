@@ -11,3 +11,6 @@ Get API key
 ```infracost register```
 
 The key can be retrieved with ```infracost configure get api_key```
+
+infracost example of the commit:
+![alt text](infracost.png)
