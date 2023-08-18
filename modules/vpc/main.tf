@@ -23,7 +23,7 @@ module "vpc" {
   azs                    = data.aws_availability_zones.available.names
   private_subnets        = ["${local.cidr_part}.1.0/24", "${local.cidr_part}.2.0/24", "${local.cidr_part}.3.0/24"]
   public_subnets         = ["${local.cidr_part}.21.0/24", "${local.cidr_part}.22.0/24", "${local.cidr_part}.23.0/24"]
-  enable_nat_gateway     = false
+  enable_nat_gateway     = true
   single_nat_gateway     = true
   one_nat_gateway_per_az = false
 }

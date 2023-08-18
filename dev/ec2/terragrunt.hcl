@@ -25,7 +25,7 @@ dependency "sg" {
 
 inputs = {
   name                   = "${include.root.inputs.deployment_prefix}-bastion-host"
-  instance_type          = "t3.micro"
+  instance_type          = "m5.xlarge"
   ami                    = "ami-08bdc08970fcbd34a"
   vpc_security_group_ids = [dependency.sg.outputs.sg_id]
   subnet_id              = dependency.vpc.outputs.public_subnets[0]
